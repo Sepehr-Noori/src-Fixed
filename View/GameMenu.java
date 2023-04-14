@@ -60,9 +60,8 @@ public class GameMenu {
     private static void checkMoveUnit(Matcher matcher) {
 
     }
+
     private static void checkPatrolUnit(Matcher matcher) {
 
     }
-
-
 }
