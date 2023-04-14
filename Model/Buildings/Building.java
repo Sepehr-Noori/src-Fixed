@@ -1,7 +1,6 @@
 package Model.Buildings;
 
 import Model.Resources.Resource;
-import Model.people.Engineer;
 
 import java.util.ArrayList;
 
@@ -14,7 +13,7 @@ public abstract class Building {
     private int resourceCostNumber;
     private int workersNumber;
     private boolean isActive;
-    public ArrayList<Engineer> Engineer;
+
 
     public void setActive(boolean active) {
         isActive = active;
