@@ -47,5 +47,26 @@ public class GameMenuController {
         return null;
     }
 
+    private static void nextTurn(){
 
+    }
+    private static void updatePopulation() {
+
+    }
+
+    private static void updateSoldiers() {
+
+    }
+
+    private static void updateStorage() {
+
+    }
+
+    private static void updatePopularityRate() {
+
+    }
+
+    private static void fight() {
+
+    }
 }

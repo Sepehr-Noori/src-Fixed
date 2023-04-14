@@ -53,16 +53,19 @@ public class GameMenu {
 
     }
 
-    private static void checkSelectUnit(Matcher matcher){
+    private static void checkSelectUnit(Matcher matcher) {
 
     }
 
     private static void checkMoveUnit(Matcher matcher) {
 
     }
+
     private static void checkPatrolUnit(Matcher matcher) {
 
     }
 
+    private static void nextTurn() {
 
+    }
 }
