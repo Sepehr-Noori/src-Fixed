@@ -1,5 +1,6 @@
 package Model.people;
 
+import Model.Stronghold;
 import Model.people.Enums.RangedTroops;
 
 public class RangedTroop extends Troops {
@@ -17,6 +18,8 @@ public class RangedTroop extends Troops {
         this.hasFiringWeapon = RANGED_TROOP.hasFiringWeapon();
         this.range = RANGED_TROOP.getRange();
         this.damageRatioOnArmor = RANGED_TROOP.getDamageRatioOnArmor();
+        this.cost = RANGED_TROOP.getCost();
+        this.ownerGovernance = Stronghold.getCurrentGovernance();
     }
 
     public int getRange() {

@@ -1,21 +1,24 @@
 package Model.people.Enums;
 
+import Model.Resources.Resource;
+
 public enum RangedTroops {
-    ARCHER(Hp.LOW, Speed.HIGH, WeaponType.BOW, ArmorType.NONE, Damage.LOW, false, false, false, 5, 0.5);
+    ARCHER(Hp.LOW, Speed.HIGH, Resource.BOW, Resource.NONE_ARMOR, Damage.LOW, false, false, false, 5, 0.5, 12);
 
     private final Hp hp;
     private final Speed speed;
-    private final WeaponType weaponType;
-    private final ArmorType armorType;
+    private final Resource weaponType;
+    private final Resource armorType;
     private final Damage damage;
     private final boolean hasHorse;
     private final boolean isArab;
     private final boolean hasFiringWeapon;
     private final int range;
     private final double damageRatioOnArmor;
+    private int cost;
 
-    RangedTroops(Hp hp, Speed speed, WeaponType weaponType, ArmorType armorType, Damage damage, boolean hasHorse,
-                 boolean isArab, boolean hasFiringWeapon, int range, double damageRatioOnArmor) {
+    RangedTroops(Hp hp, Speed speed, Resource weaponType, Resource armorType, Damage damage, boolean hasHorse,
+                 boolean isArab, boolean hasFiringWeapon, int range, double damageRatioOnArmor, int cost) {
         this.hp = hp;
         this.speed = speed;
         this.weaponType = weaponType;
@@ -26,6 +29,7 @@ public enum RangedTroops {
         this.hasFiringWeapon = hasFiringWeapon;
         this.range = range;
         this.damageRatioOnArmor = damageRatioOnArmor;
+        this.cost = cost;
     }
 
     public int getHp() {
@@ -36,11 +40,11 @@ public enum RangedTroops {
         return speed;
     }
 
-    public WeaponType getWeaponType() {
+    public Resource getWeaponType() {
         return weaponType;
     }
 
-    public ArmorType getArmorType() {
+    public Resource getArmorType() {
         return armorType;
     }
 
@@ -66,5 +70,9 @@ public enum RangedTroops {
 
     public double getDamageRatioOnArmor() {
         return damageRatioOnArmor;
+    }
+
+    public int getCost() {
+        return cost;
     }
 }

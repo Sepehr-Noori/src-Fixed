@@ -1,11 +1,14 @@
 package Model.people;
 
+import Model.Governance;
 import Model.people.Enums.AttackingModes;
 import Model.people.Enums.Speed;
 
 public abstract class Units {
     protected int hp;
     protected Speed speed;
+    protected int cost;
+    protected Governance ownerGovernance;
     protected AttackingModes attackingMode = AttackingModes.STANDING;
 
     public int getHp() {
@@ -26,5 +29,13 @@ public abstract class Units {
 
     public void setAttackingMode(AttackingModes attackingMode) {
         this.attackingMode = attackingMode;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public Governance getOwnerGovernance() {
+        return ownerGovernance;
     }
 }

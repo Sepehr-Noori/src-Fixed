@@ -1,21 +1,24 @@
 package Model.people.Enums;
 
+import Model.Resources.Resource;
+
 public enum MeleeTroops {
-    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, WeaponType.SPEAR, ArmorType.NONE, Damage.MEDIUM, false, false, false, true, true);
+    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, Resource.SPEAR, Resource.NONE_ARMOR, Damage.MEDIUM, false, false, false, true, true, 8);
 
     private final Hp hp;
     private final Speed speed;
-    private final WeaponType weaponType;
-    private final ArmorType armorType;
+    private final Resource weaponType;
+    private final Resource armorType;
     private final Damage damage;
     private final boolean hasHorse;
     private final boolean isArab;
     private final boolean hasFiringWeapon;
     private final boolean canScaleWall;
     private final boolean canDigKhandagh;
+    private final int cost;
 
-    MeleeTroops(Hp hp, Speed speed, WeaponType weaponType, ArmorType armorType, Damage damage, boolean hasHorse,
-                boolean isArab, boolean hasFiringWeapon, boolean canScaleWall, boolean canDigKhandagh) {
+    MeleeTroops(Hp hp, Speed speed, Resource weaponType, Resource armorType, Damage damage, boolean hasHorse,
+                boolean isArab, boolean hasFiringWeapon, boolean canScaleWall, boolean canDigKhandagh, int cost) {
         this.hp = hp;
         this.speed = speed;
         this.weaponType = weaponType;
@@ -26,6 +29,7 @@ public enum MeleeTroops {
         this.hasFiringWeapon = hasFiringWeapon;
         this.canScaleWall = canScaleWall;
         this.canDigKhandagh = canDigKhandagh;
+        this.cost = cost;
     }
 
     public int getHp() {
@@ -36,11 +40,11 @@ public enum MeleeTroops {
         return speed;
     }
 
-    public WeaponType getWeaponType() {
+    public Resource getWeaponType() {
         return weaponType;
     }
 
-    public ArmorType getArmorType() {
+    public Resource getArmorType() {
         return armorType;
     }
 
@@ -48,7 +52,7 @@ public enum MeleeTroops {
         return damage.getDamage();
     }
 
-    public boolean isHasHorse() {
+    public boolean hasHorse() {
         return hasHorse;
     }
 
@@ -56,15 +60,19 @@ public enum MeleeTroops {
         return isArab;
     }
 
-    public boolean isHasFiringWeapon() {
+    public boolean hasFiringWeapon() {
         return hasFiringWeapon;
     }
 
-    public boolean isCanScaleWall() {
+    public boolean canScaleWall() {
         return canScaleWall;
     }
 
-    public boolean isCanDigKhandagh() {
+    public boolean canDigKhandagh() {
         return canDigKhandagh;
+    }
+
+    public int getCost() {
+        return cost;
     }
 }

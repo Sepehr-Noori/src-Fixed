@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Stronghold {
     private final static ArrayList<User> users = new ArrayList<>();
     private static User currentUser;
+    private static Governance currentGovernance;
     private static boolean stayLoggedIn;
 
     public static boolean isRepeatedEmail(String email) {
@@ -38,5 +39,13 @@ public class Stronghold {
 
     public static void setStayLoggedIn(boolean stayLoggedIn) {
         Stronghold.stayLoggedIn = stayLoggedIn;
+    }
+
+    public static Governance getCurrentGovernance() {
+        return currentGovernance;
+    }
+
+    public static void setCurrentGovernance(Governance currentGovernance) {
+        Stronghold.currentGovernance = currentGovernance;
     }
 }
