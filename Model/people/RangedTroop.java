@@ -4,10 +4,12 @@ import Model.Stronghold;
 import Model.people.Enums.RangedTroops;
 
 public class RangedTroop extends Troops {
+    private final RangedTroops type;
     private final int range;
     private final double damageRatioOnArmor;
 
     public RangedTroop(RangedTroops RANGED_TROOP) {
+        this.type = RANGED_TROOP;
         this.hp = RANGED_TROOP.getHp();
         this.speed = RANGED_TROOP.getSpeed();
         this.weaponType = RANGED_TROOP.getWeaponType();
@@ -28,5 +30,9 @@ public class RangedTroop extends Troops {
 
     public double getDamageRatioOnArmor() {
         return damageRatioOnArmor;
+    }
+
+    public RangedTroops getType() {
+        return type;
     }
 }
