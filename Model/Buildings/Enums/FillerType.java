@@ -5,29 +5,17 @@ import Model.people.Engineer;
 
 import java.util.ArrayList;
 
-public enum TrapType {
-    ;
+public enum FillerType {
 
-    private int damage;
-    private boolean isActive;
+    WALL,STAIRS;
+
     private int size;
     private int hitPoint;
     private int goldCost;
     private Resource resourceCostType;
     private int resourceCostNumber;
     private int workersNumber;
+    private boolean isActive;
     public ArrayList<Model.people.Engineer> Engineer;
 
-    public int getDamage() {
-        return damage;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    TrapType(int damage, boolean isActive) {
-        this.damage = damage;
-        this.isActive = isActive;
-    }
 }

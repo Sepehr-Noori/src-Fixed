@@ -1,6 +1,5 @@
 package Model.map;
 
-import View.ProfileMenu;
 
 public enum Tree {
     SMALL("small"),
