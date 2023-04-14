@@ -9,9 +9,9 @@ import java.util.ArrayList;
 public enum TowerType {
     ;
 
-    private int fireRange;
-    private int defendRange;
-    private int unitCapacity;
+    private final int fireRange;
+    private final int defendRange;
+    private final int unitCapacity;
     private boolean hasStairs;
     private int size;
     private int hitPoint;

@@ -10,9 +10,9 @@ import java.util.ArrayList;
 public enum UnitMakerType {
     ;
 
-    private int unitCost;
+    private final int unitCost;
     private Utils unitUtilType;
-    private int unitUtilNumber;
+    private final int unitUtilNumber;
     private Units MadeUnit;
     private int size;
     private int hitPoint;
