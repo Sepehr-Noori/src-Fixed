@@ -1,5 +1,5 @@
 package View.Enums.Messages;
 
-public enum ProfileMenuMessages {
+public enum ShowMapMenuMessages {
     SUCCESS,
 }
