@@ -1,37 +1,31 @@
 package Model.Buildings;
 
 import Model.Buildings.Building;
+import Model.Resources.Utils;
+import Model.people.Units;
 
 public class UnitMaker extends Building {
 
-    private int engineerCost;
-    private int ladderManCost;
+    private int unitCost;
+    private Utils unitUtilType;
+    private int unitUtilNumber;
+    private Units MadeUnit;
 
-    public void setEngineerCost(int engineerCost) {
-        this.engineerCost = engineerCost;
+    public int getUnitCost() {
+        return unitCost;
     }
 
-    public void setLadderManCost(int ladderManCost) {
-        this.ladderManCost = ladderManCost;
+    public int getUnitUtilNumber() {
+        return unitUtilNumber;
     }
 
-    public void setMilitaryUnitCost(int militaryUnitCost) {
-        this.militaryUnitCost = militaryUnitCost;
+    public Utils getUnitUtilType() {
+        return unitUtilType;
     }
 
-    public int getEngineerCost() {
-        return engineerCost;
+    public Units getMadeUnit() {
+        return MadeUnit;
     }
-
-    public int getLadderManCost() {
-        return ladderManCost;
-    }
-
-    public int getMilitaryUnitCost() {
-        return militaryUnitCost;
-    }
-
-    private int militaryUnitCost;
 
     public void makeEngineer(){
 
