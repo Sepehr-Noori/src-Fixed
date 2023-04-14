@@ -1,14 +1,15 @@
 package Model.people.Enums;
 
 import Model.Resources.Resource;
+import Model.Resources.Utils;
 
 public enum MeleeTroops {
-    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, Resource.SPEAR, Resource.NONE_ARMOR, Damage.MEDIUM, false, false, false, true, true, 8);
+    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, Utils.SPEAR, Utils.NONE_ARMOR, Damage.MEDIUM, false, false, false, true, true, 8);
 
     private final Hp hp;
     private final Speed speed;
-    private final Resource weaponType;
-    private final Resource armorType;
+    private final Utils weaponType;
+    private final Utils armorType;
     private final Damage damage;
     private final boolean hasHorse;
     private final boolean isArab;
@@ -17,7 +18,7 @@ public enum MeleeTroops {
     private final boolean canDigKhandagh;
     private final int cost;
 
-    MeleeTroops(Hp hp, Speed speed, Resource weaponType, Resource armorType, Damage damage, boolean hasHorse,
+    MeleeTroops(Hp hp, Speed speed, Utils weaponType, Utils armorType, Damage damage, boolean hasHorse,
                 boolean isArab, boolean hasFiringWeapon, boolean canScaleWall, boolean canDigKhandagh, int cost) {
         this.hp = hp;
         this.speed = speed;
@@ -40,11 +41,11 @@ public enum MeleeTroops {
         return speed;
     }
 
-    public Resource getWeaponType() {
+    public Utils getWeaponType() {
         return weaponType;
     }
 
-    public Resource getArmorType() {
+    public Utils getArmorType() {
         return armorType;
     }
 

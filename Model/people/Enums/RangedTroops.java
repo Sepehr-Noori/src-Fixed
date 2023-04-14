@@ -1,14 +1,14 @@
 package Model.people.Enums;
 
-import Model.Resources.Resource;
+import Model.Resources.Utils;
 
 public enum RangedTroops {
-    ARCHER(Hp.LOW, Speed.HIGH, Resource.BOW, Resource.NONE_ARMOR, Damage.LOW, false, false, false, 5, 0.5, 12);
+    ARCHER(Hp.LOW, Speed.HIGH, Utils.BOW, Utils.NONE_ARMOR, Damage.LOW, false, false, false, 5, 0.5, 12);
 
     private final Hp hp;
     private final Speed speed;
-    private final Resource weaponType;
-    private final Resource armorType;
+    private final Utils weaponType;
+    private final Utils armorType;
     private final Damage damage;
     private final boolean hasHorse;
     private final boolean isArab;
@@ -17,7 +17,7 @@ public enum RangedTroops {
     private final double damageRatioOnArmor;
     private int cost;
 
-    RangedTroops(Hp hp, Speed speed, Resource weaponType, Resource armorType, Damage damage, boolean hasHorse,
+    RangedTroops(Hp hp, Speed speed, Utils weaponType, Utils armorType, Damage damage, boolean hasHorse,
                  boolean isArab, boolean hasFiringWeapon, int range, double damageRatioOnArmor, int cost) {
         this.hp = hp;
         this.speed = speed;
@@ -40,11 +40,11 @@ public enum RangedTroops {
         return speed;
     }
 
-    public Resource getWeaponType() {
+    public Utils getWeaponType() {
         return weaponType;
     }
 
-    public Resource getArmorType() {
+    public Utils getArmorType() {
         return armorType;
     }
 

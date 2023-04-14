@@ -1,20 +1,20 @@
 package Model.people;
 
-import Model.Resources.Resource;
+import Model.Resources.Utils;
 
 public abstract class Troops extends Units {
-    protected Resource weaponType;
-    protected Resource armorType;
+    protected Utils weaponType;
+    protected Utils armorType;
     protected int damage;
     protected boolean hasHorse;
     protected boolean isArab;
     protected boolean hasFiringWeapon;
 
-    public Resource getWeaponType() {
+    public Utils getWeaponType() {
         return weaponType;
     }
 
-    public Resource getArmorType() {
+    public Utils getArmorType() {
         return armorType;
     }
 
