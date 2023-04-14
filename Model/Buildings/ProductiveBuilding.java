@@ -1,11 +1,27 @@
 package Model.Buildings;
 
-import Model.Resources.Resource;
+import Model.Resources.AllResource;
 
 public class ProductiveBuilding extends Building {
 
-    private Resource producedResource;
-    private Resource requiredResource;
+    private AllResource producedResource;
+    private AllResource requiredResource;
     private int productionRate;
+
+    public AllResource getProducedResource() {
+        return producedResource;
+    }
+
+    public AllResource getRequiredResource() {
+        return requiredResource;
+    }
+
+    public int getProductionRate() {
+        return productionRate;
+    }
+
+    public void oneTurnPass(){
+
+    }
 
 }
