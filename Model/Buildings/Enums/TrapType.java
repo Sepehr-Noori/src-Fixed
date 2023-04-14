@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public enum TrapType {
     ;
 
-    private int damage;
+    private final int damage;
     private boolean isActive;
     private int size;
     private int hitPoint;

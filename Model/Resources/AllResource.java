@@ -40,4 +40,12 @@ public enum AllResource {
         this.name = name;
         this.price = price;
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String printResource() {
+        return null;
+    }
 }

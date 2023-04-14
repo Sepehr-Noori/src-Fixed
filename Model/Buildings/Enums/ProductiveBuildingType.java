@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public enum ProductiveBuildingType {
     ;
 
-    private Resource producedResource;
+    private final Resource producedResource;
     private Resource requiredResource;
-    private int productionRate;
+    private final int productionRate;
     private int size;
     private int hitPoint;
     private int goldCost;

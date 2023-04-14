@@ -9,8 +9,9 @@ import java.util.ArrayList;
 public enum StorageType {
     ;
 
-    private AllResource resource;
-    private int capacity,filledCapacity;
+    private final AllResource resource;
+    private final int capacity;
+    private final int filledCapacity;
     private int size;
     private int hitPoint;
     private int goldCost;
