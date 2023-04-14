@@ -8,6 +8,7 @@ public class Governance {
     private final HashMap<Resource, Integer> resource = new HashMap<>();
     private User owner;
     private int gold;
+    private int population;
     private int popularity;
     private int taxRate;
     private int foodRate;
