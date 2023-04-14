@@ -20,7 +20,7 @@ public enum TowerType {
     private int resourceCostNumber;
     private int workersNumber;
     private boolean isActive;
-    public ArrayList<Model.people.Engineer> Engineer;
+    public ArrayList<Engineer> Engineer;
     private ArrayList<Units> units = new ArrayList<>();
 
     public int getFireRange() {

@@ -1,6 +1,7 @@
 package Model.people.Enums;
 
 public enum Speed {
+
     VERY_LOW(1),
     LOW(2),
     MEDIUM(3),

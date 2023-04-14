@@ -1,5 +1,6 @@
 package Model.Buildings;
 
+import Model.Governance;
 import Model.Resources.Resource;
 import Model.people.Engineer;
 
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 
 public abstract class Building {
 
+    private Governance owner;
     private int size;
     private int hitPoint;
     private int goldCost;

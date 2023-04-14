@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public enum FillerType {
 
-    WALL,STAIRS;
+    WALL, STAIRS;
 
     private int size;
     private int hitPoint;
