@@ -1,7 +1,7 @@
 package Model.people;
 
 import Model.Governance;
-import Model.people.Enums.AttackingModes;
+import Model.people.Enums.UnitState;
 import Model.people.Enums.Speed;
 
 public abstract class Units {
@@ -9,7 +9,7 @@ public abstract class Units {
     protected Speed speed;
     protected int cost;
     protected Governance ownerGovernance;
-    protected AttackingModes attackingMode = AttackingModes.STANDING;
+    protected UnitState unitState = UnitState.STANDING;
 
     public int getHp() {
         return hp;
@@ -23,12 +23,12 @@ public abstract class Units {
         return speed.getMoveInEachTurn();
     }
 
-    public AttackingModes getAttackingMode() {
-        return attackingMode;
+    public UnitState getUnitState() {
+        return unitState;
     }
 
-    public void setAttackingMode(AttackingModes attackingMode) {
-        this.attackingMode = attackingMode;
+    public void setUnitState(UnitState unitState) {
+        this.unitState = unitState;
     }
 
     public int getCost() {

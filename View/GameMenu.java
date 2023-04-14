@@ -20,7 +20,7 @@ public class GameMenu {
 
     }
 
-    private static void checkFoodRate(Matcher matcher) {
+    private static void checkChangeFoodRate(Matcher matcher) {
 
     }
 
@@ -28,7 +28,7 @@ public class GameMenu {
 
     }
 
-    private static void checkTaxRate(Matcher matcher) {
+    private static void checkChangeTaxRate(Matcher matcher) {
 
 
     }
@@ -37,7 +37,32 @@ public class GameMenu {
 
     }
 
-    private static void checkFearRate(Matcher matcher) {
+    private static void checkChangeFearRate(Matcher matcher) {
 
     }
+
+    private static void showFearRate() {
+
+    }
+
+    private static void checkDropBuilding(Matcher matcher) {
+
+    }
+
+    private static void checkSelectBuilding(Matcher matcher) {
+
+    }
+
+    private static void checkSelectUnit(Matcher matcher){
+
+    }
+
+    private static void checkMoveUnit(Matcher matcher) {
+
+    }
+    private static void checkPatrolUnit(Matcher matcher) {
+
+    }
+
+
 }

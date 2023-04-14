@@ -1,6 +1,7 @@
 package Controller;
 
 import View.Enums.Messages.GameMenuMessages;
+import View.GameMenu;
 
 import java.util.regex.Matcher;
 
@@ -14,7 +15,7 @@ public class GameMenuController {
         return null;
     }
 
-    private static GameMenuMessages checkFoodRate(Matcher matcher) {
+    private static GameMenuMessages checkChangeFoodRate(Matcher matcher) {
         return null;
     }
 
@@ -22,8 +23,7 @@ public class GameMenuController {
         return null;
     }
 
-    private static GameMenuMessages checkTaxRate(Matcher matcher) {
-
+    private static GameMenuMessages checkChangeTaxRate(Matcher matcher) {
         return null;
     }
 
@@ -31,7 +31,21 @@ public class GameMenuController {
         return null;
     }
 
-    private static GameMenuMessages checkFearRate(Matcher matcher) {
+    private static GameMenuMessages checkChangeFearRate(Matcher matcher) {
         return null;
     }
+
+    private static String showFearRate() {
+        return null;
+    }
+
+    private static GameMenuMessages checkDropBuilding(Matcher matcher) {
+        return null;
+    }
+
+    private static GameMenuMessages checkSelectBuilding(Matcher matcher) {
+        return null;
+    }
+
+
 }

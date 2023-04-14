@@ -1,6 +1,6 @@
 package Model.people.Enums;
 
-public enum AttackingModes {
+public enum UnitState {
     STANDING,
     DEFENSIVE,
     OFFENSIVE;
