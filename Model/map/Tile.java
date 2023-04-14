@@ -1,6 +1,7 @@
 package Model.map;
 
 import Model.Buildings.Building;
+import Model.Resources.AllResource;
 import Model.people.Units;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ public class Tile {
     private Building building;
     private ArrayList<Units> units = new ArrayList<>();
     private AllResource resource;
+    private Tree tree;
 
     public Texture getTexture() {
         return texture;
@@ -41,5 +43,13 @@ public class Tile {
 
     public void setResource(AllResource resource) {
         this.resource = resource;
+    }
+
+    public Tree getTree() {
+        return tree;
+    }
+
+    public void setTree(Tree tree) {
+        this.tree = tree;
     }
 }
