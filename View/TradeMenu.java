@@ -5,21 +5,24 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class TradeMenu {
-    public static void run(Scanner scanner) {
+    public static void run() {
+        Scanner scanner;
 
     }
 
-    private void checkTrade(Matcher matcher) {
+    private static void checkTrade(Matcher matcher) {
 
     }
 
-    private void tradeList() {
-
-    }
-    private void checkAcceptTrade(Matcher matcher) {
+    private static void tradeList() {
 
     }
 
-    private void tradeHistory() {
+    private static void checkAcceptTrade(Matcher matcher) {
+
+    }
+
+    private static void tradeHistory() {
+
     }
 }
