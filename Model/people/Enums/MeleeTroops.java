@@ -4,7 +4,7 @@ import Model.Resources.Resource;
 import Model.Resources.Utils;
 
 public enum MeleeTroops {
-    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, Utils.SPEAR, Utils.NONE_ARMOR, Damage.MEDIUM, false, false, false, true, true, 8);
+    SPEARMAN(Hp.VERY_LOW, Speed.MEDIUM, Utils.SPEAR, null, Damage.MEDIUM, false, false, false, true, true, 8);
 
     private final Hp hp;
     private final Speed speed;

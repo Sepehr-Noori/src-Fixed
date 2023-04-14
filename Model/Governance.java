@@ -37,14 +37,14 @@ public class Governance {
         foods.put(Food.APPLE, 0);
         foods.put(Food.MEAT, 0);
         foods.put(Food.CHEESE, 0);
-        utils.put(Utils.CROSSBOW,0);
-        utils.put(Utils.SPEAR,0);
-        utils.put(Utils.BOW,0);
-        utils.put(Utils.MACE,0);
-        utils.put(Utils.PIKE,0);
-        utils.put(Utils.LEATHER_ARMOR,0);
-        utils.put(Utils.METAL_ARMOR,0);
-        utils.put(Utils.SWORD,0);
+        utils.put(Utils.CROSSBOW, 0);
+        utils.put(Utils.SPEAR, 0);
+        utils.put(Utils.BOW, 0);
+        utils.put(Utils.MACE, 0);
+        utils.put(Utils.PIKE, 0);
+        utils.put(Utils.LEATHER_ARMOR, 0);
+        utils.put(Utils.METAL_ARMOR, 0);
+        utils.put(Utils.SWORD, 0);
     }
 
     public User getOwner() {
@@ -149,6 +149,18 @@ public class Governance {
 
     public void addResource(Utils util, int count) {
         utils.put(util, count);
+    }
+
+    public int getResourceCount(Resource resource) {
+        return 0;
+    }
+
+    public int getFoodCount(Food food) {
+        return 0;
+    }
+
+    public int getUtilCount(Utils util) {
+        return 0;
     }
 
     public Governance(User owner) {

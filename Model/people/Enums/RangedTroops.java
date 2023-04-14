@@ -3,7 +3,7 @@ package Model.people.Enums;
 import Model.Resources.Utils;
 
 public enum RangedTroops {
-    ARCHER(Hp.LOW, Speed.HIGH, Utils.BOW, Utils.NONE_ARMOR, Damage.LOW, false, false, false, 5, 0.5, 12);
+    ARCHER(Hp.LOW, Speed.HIGH, Utils.BOW, null, Damage.LOW, false, false, false, 5, 0.5, 12);
 
     private final Hp hp;
     private final Speed speed;

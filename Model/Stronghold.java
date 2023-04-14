@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Stronghold {
     private final static ArrayList<User> users = new ArrayList<>();
+    private final static ArrayList<Trade> trades = new ArrayList<>();
     private static User currentUser;
     private static Governance currentGovernance;
     private static boolean stayLoggedIn;
@@ -47,5 +48,13 @@ public class Stronghold {
 
     public static void setCurrentGovernance(Governance currentGovernance) {
         Stronghold.currentGovernance = currentGovernance;
+    }
+
+    public static void addTrade(Trade trade) {
+        trades.add(trade);
+    }
+
+    public static String printTrades() {
+        return null;
     }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class User {
     private final static ArrayList<String> randomSlogans = new ArrayList<>();
+    private final ArrayList<Trade> trades = new ArrayList<>();
     private int highScore;
     private String username;
     private String password;
@@ -92,4 +93,10 @@ public class User {
         return this.recoveryAnswer.equals(recoveryAnswer);
     }
 
+    public void addTrade(Trade trade) {
+        trades.add(trade);
+    }
+    public static String printTrades() {
+        return null;
+    }
 }
