@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class User {
     private final static ArrayList<String> randomSlogans = new ArrayList<>();
-    private final ArrayList<Trade> trades = new ArrayList<>();
+    private final ArrayList<Trade> previousTrades = new ArrayList<>();
     private int highScore;
     private String username;
     private String password;
@@ -94,7 +94,7 @@ public class User {
     }
 
     public void addTrade(Trade trade) {
-        trades.add(trade);
+        previousTrades.add(trade);
     }
     public static String printTrades() {
         return null;
