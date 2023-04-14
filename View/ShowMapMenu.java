@@ -1,6 +1,6 @@
 package View;
 
-public class MainMenu {
+public class ShowMapMenu {
     public static void run() {
 
     }
